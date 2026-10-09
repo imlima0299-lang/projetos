@@ -58,3 +58,12 @@ img {
 audio {
     width: 230px;
 }
+
+div {
+    width: 360px;
+    height: auto;
+}
+
+iframe {
+    width: 100%;
+}
