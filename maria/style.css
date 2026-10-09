@@ -60,10 +60,15 @@ audio {
 }
 
 div {
-    width: 360px;
+    display: flex;
+    width: 350px;
     height: auto;
+    background-color: #373A80;
+    padding: 10px;
 }
 
 iframe {
+    text-align: center;
+    align-items: center;
     width: 100%;
 }
