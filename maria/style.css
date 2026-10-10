@@ -31,8 +31,9 @@ section {
     background-color: #373A80;
     padding: 8px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 20px auto 20px auto;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.505);
+    width: 450px;
 }
 
 span {
@@ -50,9 +51,14 @@ span {
     text-align: left;
 }
 
-img {
-    width: 80px;
-    border-radius: 50px;
+.container {}
+
+#perfil {
+    display: flex;
+    align-items: self-start;
+    width: 100px;
+    border-radius: 50%;
+
 }
 
 audio {
@@ -61,10 +67,12 @@ audio {
 
 div {
     display: flex;
-    width: 350px;
+    width: 346px;
     height: auto;
     background-color: #373A80;
     padding: 10px;
+    margin: auto;
+    border-radius: 10px;
 }
 
 iframe {
