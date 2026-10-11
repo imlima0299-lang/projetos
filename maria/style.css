@@ -14,7 +14,7 @@
 
 header {
     font-family: 'lovely';
-    color: #6369E6;
+    color: #3454A7;
     text-align: center;
     font-weight: normal;
 }
@@ -28,7 +28,7 @@ p {
 body {
     margin: auto 3px 0px 3px;
     margin-bottom: 0%;
-    background-image: url(t.jpg);
+    background-image: url(https://i.pinimg.com/736x/20/a5/43/20a543c918e8a778c04b0f0ee6192bfe.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -36,11 +36,22 @@ body {
 }
 
 section {
-    background-color: #373A80;
+    background-color: #222454;
     padding: 8px;
     border-radius: 10px;
     margin: 9px auto 9px auto;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.432);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.432);
+    max-width: 500px;
+
+}
+
+.musica {
+    display: flex;
+    height: auto;
+    background-color: #222454;
+    padding: 10px;
+    margin: auto auto 20px auto;
+    border-radius: 10px;
     max-width: 500px;
 
 }
@@ -52,7 +63,7 @@ span {
 .painel>h1 {
     font-size: 17px;
     text-align: center;
-    color: rgb(6, 37, 95);
+    color: rgb(8, 63, 167);
 }
 
 .painel>ol {
@@ -63,22 +74,10 @@ span {
 
 
 #perfil {
+    box-shadow: 0px 0px 5px rgba(0, 0, 7, 0.507);
     margin: auto;
     width: 100px;
     border-radius: 50%;
-
-}
-
-
-
-.musica {
-    display: flex;
-    height: auto;
-    background-color: #373A80;
-    padding: 10px;
-    margin: auto auto 20px auto;
-    border-radius: 10px;
-    max-width: 500px;
 
 }
 
@@ -89,9 +88,10 @@ iframe {
 }
 
 #sorriso h1 {
+    text-align: center;
     font-family: 'lovely';
     font-size: 2em;
-    color: rgb(6, 37, 95);
+    color: rgb(8, 63, 167);
     margin-bottom: 4px;
 
 }
@@ -106,14 +106,16 @@ iframe {
 }
 
 .fotos h1 {
+    text-align: center;
     font-family: 'lovely';
     color: white;
 }
 
 #cheiro h1 {
+    text-align: center;
     font-family: 'lovely';
     font-size: 2em;
-    color: rgb(6, 37, 95);
+    color: rgb(8, 63, 167);
     margin-bottom: 4px;
 
 }
