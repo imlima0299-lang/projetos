@@ -1,0 +1,62 @@
+:root {
+    --bg-principal: #FDF9F9;
+    --bg-card: #FFFFFF;
+    --texto-principal: #331A1A;
+    --texto-secundario: #6F5E5E;
+    --destaque: #D93F3F;
+}
+
+.darkmode {
+    --bg-principal: #1A1212;
+    --bg-card: #281D1D;
+    --texto-principal: #F8EDED;
+    --texto-secundario: #A18B8B;
+    --destaque: #FF6B6B;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--bg-principal);
+}
+
+header {
+    text-align: center;
+    border: 1px solid black;
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 2px 4px black;
+}
+
+main {
+    margin-top: 20px;
+}
+
+section {
+    border-left: var(--destaque) 10px solid;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 300px;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.452);
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+span {
+    color: var(--destaque);
+    font-weight: bold;
+}
