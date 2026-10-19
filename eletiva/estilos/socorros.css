@@ -60,3 +60,23 @@ span {
     color: var(--destaque);
     font-weight: bold;
 }
+
+a {
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--destaque);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+a:hover {
+    transform: scale(1.07);
+    transition: all .4s ease;
+}
