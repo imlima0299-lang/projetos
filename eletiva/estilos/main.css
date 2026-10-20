@@ -33,10 +33,11 @@ header {
 .material-symbols-outlined {
     border-radius: 50%;
     position: fixed;
-    left: 350px;
+    left: 320px;
     top: 3px;
     padding: 7px;
     color: var(--destaque);
+    z-index: 1000;
     font-variation-settings:
         'FILL' 1,
         'wght' 400,

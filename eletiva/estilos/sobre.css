@@ -1,0 +1,113 @@
+:root {
+    --bg-principal: #FDF9F9;
+    --bg-card: #FFFFFF;
+    --texto-principal: #331A1A;
+    --texto-secundario: #6F5E5E;
+    --destaque: #D93F3F;
+}
+
+.darkmode {
+    --bg-principal: #4a4848;
+    --bg-card: #e6e2e2;
+    --texto-principal: #F8EDED;
+    --texto-secundario: #A18B8B;
+    --destaque: #FF6B6B;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sobre-nos {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sobre-cabecalho {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo-equipe {
+    text-align: center;
+    color: var(--destaque, #e50914);
+    margin-bottom: 20px;
+}
+
+.equipe-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.membro-card {
+    background: var(--bg-card, #ffffff);
+    border-left: 6px solid #888888;
+    /* Borda lateral cinza padrão */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Destaque para a Líder */
+.membro-card.lider {
+    border-left-color: var(--destaque, #e50914);
+    /* Borda vermelha */
+}
+
+/* Destaque para a área de Tecnologia */
+.membro-card.dev {
+    border-left-color: #2196f3;
+    /* Borda azul ou a cor de destaque que preferir */
+}
+
+.membro-card h4 {
+    margin: 0 0 4px 0;
+    font-size: 1.1rem;
+}
+
+.membro-card .cargo {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--destaque, #e50914);
+    margin-bottom: 8px;
+}
+
+.membro-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #555555;
+}
+
+/* Ajustes automáticos para o modo escuro */
+body.darkmode .membro-card {
+    background: #222222;
+    color: #ffffff;
+}
+
+body.darkmode .membro-card p {
+    color: #cccccc;
+}
+
+a {
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--destaque);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+a:hover {
+    transform: scale(1.07);
+    transition: all .4s ease;
+}

@@ -1,0 +1,32 @@
+@media screen and (min-width:700px) {
+    #hamburguer {
+        display: none;
+    }
+
+    #menu {
+        background-color: transparent;
+        backdrop-filter: none;
+        position: relative;
+        top: 30px;
+        left: 50%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: none;
+        align-items: center;
+    }
+
+    nav>div,
+    a {
+        margin-bottom: 0%;
+        margin-right: 10px;
+    }
+
+    #close {
+        left: -175px;
+    }
+
+    #menudark {
+        width: 25%;
+    }
+
+}
