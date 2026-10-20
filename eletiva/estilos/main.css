@@ -7,8 +7,8 @@
 }
 
 .darkmode {
-    --bg-principal: #1A1212;
-    --bg-card: #281D1D;
+    --bg-principal: #4a4848;
+    --bg-card: #e6e2e2;
     --texto-principal: #F8EDED;
     --texto-secundario: #A18B8B;
     --destaque: #FF6B6B;
@@ -31,19 +31,24 @@ header {
 }
 
 .material-symbols-outlined {
+    border-radius: 50%;
     position: fixed;
-    position: absolute;
     left: 350px;
     top: 3px;
-    background-color: var(--destaque);
-    border-radius: 50%;
     padding: 7px;
-    color: white;
+    color: var(--destaque);
     font-variation-settings:
         'FILL' 1,
         'wght' 400,
         'GRAD' 0,
         'opsz' 24
+}
+
+.material-symbols-outlined:hover {
+    transform: scale(1.09);
+    background-color: var(--destaque);
+    color: white;
+    transition: all .5s ease;
 }
 
 
@@ -58,6 +63,135 @@ header>h1 {
 
 }
 
+nav {
+    display: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 100;
+}
+
+#perfil-bt {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 20%;
+    background-color: var(--destaque);
+}
+
+#perfil-bt:hover {
+    transform: scale(1.08);
+    text-decoration: underline;
+    transition: all .4s ease;
+}
+
+#configuração-bt {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 54%;
+    background-color: var(--destaque);
+}
+
+#configuração-bt:hover {
+    transform: scale(1.08);
+    text-decoration: underline;
+    transition: all .4s ease;
+}
+
+#sobre-bt {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 54%;
+    margin-bottom: 5px;
+    background-color: var(--destaque);
+}
+
+#sobre-bt:hover {
+    transform: scale(1.08);
+    text-decoration: underline;
+    transition: all .4s ease;
+}
+
+#login {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 54%;
+    background-color: var(--destaque);
+}
+
+#login:hover {
+    transform: scale(1.08);
+    text-decoration: underline;
+    transition: all .4s ease;
+}
+
+#menudark {
+    display: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 100;
+}
+
+#dark {
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--destaque);
+}
+
+#dark:hover {
+    transform: scale(1.08);
+    text-decoration: underline;
+    transition: all .4s ease;
+}
+
+#close {
+    position: relative;
+    top: -25px;
+    left: -110px;
+    padding: 2px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: var(--destaque);
+    color: white;
+}
+
 main {
     margin-top: 10px;
     margin-left: auto;
@@ -65,6 +199,7 @@ main {
 }
 
 #primeiro-socorros {
+    background-color: var(--bg-card);
     border-left: var(--destaque) 10px solid;
     margin: auto;
     margin-bottom: 20px;
@@ -116,6 +251,7 @@ main {
 }
 
 #doença {
+    background-color: var(--bg-card);
     border-left: green 10px solid;
     margin: auto;
     margin-bottom: 20px;
@@ -140,6 +276,7 @@ a {
 }
 
 #campanhas {
+    background-color: var(--bg-card);
     border-left: grey 10px solid;
     margin: auto;
     margin-bottom: 20px;

@@ -7,3 +7,7 @@ function enviar(event) {
     localStorage.setItem("user", user.value)
     window.location.href = "index.html"
 }
+
+if (localStorage.getItem('tema') === 'dark') {
+    document.body.classList.add('darkmode')
+}

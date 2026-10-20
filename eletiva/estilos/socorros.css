@@ -7,8 +7,8 @@
 }
 
 .darkmode {
-    --bg-principal: #1A1212;
-    --bg-card: #281D1D;
+    --bg-principal: #4a4848;
+    --bg-card: #e6e2e2;
     --texto-principal: #F8EDED;
     --texto-secundario: #A18B8B;
     --destaque: #FF6B6B;
@@ -39,6 +39,7 @@ main {
 }
 
 section {
+    background-color: var(--bg-card);
     border-left: var(--destaque) 10px solid;
     margin: auto;
     margin-bottom: 20px;

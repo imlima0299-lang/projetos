@@ -5,26 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Ativa</title>
-    <link rel="stylesheet" href="estilos/main.css">
+    <link rel="stylesheet" href="../estilos/main.css">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=person" />
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
 
 </head>
 
 <body>
     <header>
-        <span class="material-symbols-outlined">
-            person
+        <span class="material-symbols-outlined" id="hamburguer">
+            menu
         </span>
-        <img src="logo.png" alt="" id="logo">
+        <img src="../logo.png" alt="" id="logo">
         <h1>Guia Ativo</h1>
     </header>
+    <nav id="menu">
+        <a href="perfil.html" id="perfil-bt">Perfil</a>
+        <div id="configuração-bt">configuração</div>
+        <a href="" id="sobre-bt">Sobre nois</a>
+        <a href="login.html" id="login">Login</a>
+    </nav>
+    <div id="menudark">
+        <div id="close">X</div>
+        <input type="button" value="Dark Mode" id="dark">
+    </div>
     <main>
         <section id="primeiro-socorros">
             <a href="socorros.html">
                 <div class="card-socorro">
-                    <img src="https://i.pinimg.com/736x/0d/25/34/0d25348612ffcc5425ec063a5ef238c6.jpg" alt=""
+                    <img src="https://i.pinimg.com/736x/0d/25/34/0d25348612ffcc5425ec063a5ef238c6.jpg" alt="logo"
                         class="socorros">
                     <div class="sombra"></div>
                 </div>
@@ -32,7 +42,7 @@
             </a>
         </section>
         <section id="doença">
-            <a href="">
+            <a href="doença.html">
                 <div class="card-socorro">
                     <img src="https://i.pinimg.com/736x/7d/9c/03/7d9c03f8b0323813ef4e96a7704f96fb.jpg" class="socorros">
                     <div class="sombra"></div>
@@ -41,7 +51,7 @@
             </a>
         </section>
         <section id="campanhas">
-            <a href="">
+            <a href="campanha.html">
                 <div class="card-socorro">
                     <img src="https://i.pinimg.com/736x/c4/ff/74/c4ff742ac735a8183558adc58e0f2bd1.jpg" class="socorros">
                     <div class="sombra"></div>
@@ -50,6 +60,7 @@
             </a>
         </section>
     </main>
+    <script src="../script/index.js"></script>
 </body>
 
 </html>
