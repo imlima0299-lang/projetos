@@ -36,6 +36,12 @@ function dark() {
     } else {
         localStorage.removeItem('tema')
     }
+
+    if (document.body.classList.contains('darkmode')) {
+        darkBt.value = "Light Mode"
+    } else {
+        darkBt.value = "Dark Mode"
+    }
 }
 
 if (localStorage.getItem('tema') === 'dark') {
