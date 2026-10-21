@@ -4,22 +4,20 @@
     }
 
     #menu {
+        display: flex !important;
         background-color: transparent;
         backdrop-filter: none;
         position: relative;
-        top: 30px;
+        top: 20px;
         left: 50%;
-        display: flex;
         flex-flow: row nowrap;
         justify-content: none;
         align-items: center;
+        background-color: var(--destaque);
+        padding: 2px;
     }
 
-    nav>div,
-    a {
-        margin-bottom: 0%;
-        margin-right: 10px;
-    }
+
 
     #close {
         left: -175px;
@@ -27,6 +25,20 @@
 
     #menudark {
         width: 25%;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #perfil-bt,
+    #configuração-bt,
+    #sobre-bt,
+    #login {
+        background-color: transparent;
     }
 
 }

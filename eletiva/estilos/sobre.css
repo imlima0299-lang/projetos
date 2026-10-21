@@ -24,6 +24,10 @@
     margin: 0 auto;
 }
 
+body {
+    background-color: var(--bg-principal);
+}
+
 .sobre-cabecalho {
     text-align: center;
     margin-bottom: 30px;
@@ -110,4 +114,8 @@ a {
 a:hover {
     transform: scale(1.07);
     transition: all .4s ease;
+}
+
+.branco {
+    color: var(--texto-principal);
 }
